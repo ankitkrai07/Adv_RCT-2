@@ -86,22 +86,22 @@ const products: Product[] = [
     id: 2,
     status: true,
   },
-  {
-    image: "product3.jpg",
-    price: 39.99,
-    id: 3,
-    status: false,
-    colour: "blue",
-  },
+  // {
+  //   image: "product3.jpg",
+  //   price: 39.99,
+  //   id: 3,
+  //   status: false,
+  //   colour: "blue",
+  // },
   // Add more products here...
 ];
 
-// // Example of accessing a product
-// const firstProduct: Product = products[0];
-// console.log(firstProduct.image); // Output: "product1.jpg"
-// console.log(firstProduct.price); // Output: 25.99
-// console.log(firstProduct.status); // Output: true
-// console.log(firstProduct.colour); // Output: "red"
+// Example of accessing a product
+const firstProduct: Product = products[0];
+console.log(firstProduct.image); // Output: "product1.jpg"
+console.log(firstProduct.price); // Output: 25.99
+console.log(firstProduct.status); // Output: true
+console.log(firstProduct.colour); // Output: "red"
 
 type product = {
   image: string;
