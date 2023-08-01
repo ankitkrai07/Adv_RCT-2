@@ -165,3 +165,6 @@ var Safari = /** @class */ (function (_super) {
     return Safari;
 }(Car));
 var c1 = new Safari("safari", "DIESEL", false); // DIESEL / PETROL / ELECTRIC
+function sum4(a, func) {
+    return func(a);
+}
