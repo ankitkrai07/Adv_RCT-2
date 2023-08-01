@@ -186,3 +186,72 @@ let companyEmployee = {
 function sum(a: number, b: number): number {
   return a + b; //`${a}+${b}`;--->wrong
 }
+
+// Enums (read about it explore it)
+
+// Tuple
+
+let user = {
+  f_name: "Ankit",
+  l_name: "Kumar",
+  address: "1st Street",
+  open: true,
+  age: 25,
+};
+
+console.log(user.address);
+
+type Tuple = [string, string, string, boolean, number];
+
+let newUser: Tuple = ["Ankit", "Kumar", "1st Street", true, 25];
+
+console.log(newUser[2]);
+
+let anotherUser: Tuple = ["Ankit", "Kumar", "1st Street", false, 30];
+
+// Generic function
+
+function sum1(a: number, b: number): number {
+  return a + b;
+}
+
+function sum2(a: string, b: string): string {
+  return a + b;
+}
+
+sum1(10, 20);
+sum2("a", "b"); // "ab"
+
+function sum3<T>(a: T) {
+  return a;
+}
+
+sum3(10);
+sum3<string>("abc");
+sum3<number>(20);
+// sum<boolean>(false); // here problem
+
+// const [count, setCount] = useState<number>(0);
+
+// Classes
+
+type Fuel = "DIESEL" | "PETROL" | "ELECTRIC";
+
+class Car {
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+}
+
+class Safari extends Car {
+  type: Fuel;
+  sunRoof: boolean;
+  constructor(name: string, type: Fuel, sunRoof: boolean) {
+    super(name);
+    this.sunRoof = sunRoof;
+    this.type = type;
+  }
+}
+
+const c1 = new Safari("safari", "DIESEL", false); // DIESEL / PETROL / ELECTRIC

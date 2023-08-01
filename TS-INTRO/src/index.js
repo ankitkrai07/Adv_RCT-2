@@ -1,3 +1,18 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 console.log("hello");
 // Number
 var a = 10;
@@ -105,3 +120,48 @@ var companyEmployee = {
 function sum(a, b) {
     return a + b; //`${a}+${b}`;--->wrong
 }
+// Enums (read about it explore it)
+// Tuple
+var user = {
+    f_name: "Ankit",
+    l_name: "Kumar",
+    address: "1st Street",
+    open: true,
+    age: 25,
+};
+console.log(user.address);
+var newUser = ["Ankit", "Kumar", "1st Street", true, 25];
+console.log(newUser[2]);
+var anotherUser = ["Ankit", "Kumar", "1st Street", false, 30];
+// Generic function
+function sum1(a, b) {
+    return a + b;
+}
+function sum2(a, b) {
+    return a + b;
+}
+sum1(10, 20);
+sum2("a", "b"); // "ab"
+function sum3(a) {
+    return a;
+}
+sum3(10);
+sum3("abc");
+sum3(20);
+var Car = /** @class */ (function () {
+    function Car(name) {
+        this.name = name;
+    }
+    return Car;
+}());
+var Safari = /** @class */ (function (_super) {
+    __extends(Safari, _super);
+    function Safari(name, type, sunRoof) {
+        var _this = _super.call(this, name) || this;
+        _this.sunRoof = sunRoof;
+        _this.type = type;
+        return _this;
+    }
+    return Safari;
+}(Car));
+var c1 = new Safari("safari", "DIESEL", false); // DIESEL / PETROL / ELECTRIC
