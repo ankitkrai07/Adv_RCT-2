@@ -59,7 +59,6 @@ const task1: Todo = {
 
 // Problem
 // Create an array of products with following properties
-
 // image, price, id ,status, colour(optional)
 
 // Define the Product interface
@@ -86,13 +85,13 @@ const products: Product[] = [
     id: 2,
     status: true,
   },
-  // {
-  //   image: "product3.jpg",
-  //   price: 39.99,
-  //   id: 3,
-  //   status: false,
-  //   colour: "blue",
-  // },
+  {
+    image: "product3.jpg",
+    price: 39.99,
+    id: 3,
+    status: false,
+    colour: "blue",
+  },
   // Add more products here...
 ];
 
