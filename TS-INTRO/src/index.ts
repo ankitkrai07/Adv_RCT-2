@@ -151,3 +151,38 @@ let arrayOfProduct: Products[] = [
 let b: number | string | boolean = 10;
 b = "str";
 b = true;
+
+// any
+
+type Company = {
+  name: string;
+  address: string;
+  open: boolean;
+};
+
+// type Employee = {
+//     f_name: string;
+//     l_name: string;
+//     age: number;
+
+// }
+
+// interface Employee extends Company = {
+//     f_name: string;
+//     l_name: string;
+//     age: number;
+
+// }
+
+let companyEmployee = {
+  name: "Ankit",
+  address: "1st street",
+  open: false,
+  f_name: "Ankit",
+  l_name: "Kumar",
+  age: 22,
+};
+
+function sum(a: number, b: number): number {
+  return a + b; //`${a}+${b}`;--->wrong
+}

@@ -84,3 +84,24 @@ var arrayOfProduct = [
 var b = 10;
 b = "str";
 b = true;
+// type Employee = {
+//     f_name: string;
+//     l_name: string;
+//     age: number;
+// }
+// interface Employee extends Company = {
+//     f_name: string;
+//     l_name: string;
+//     age: number;
+// }
+var companyEmployee = {
+    name: "Ankit",
+    address: "1st street",
+    open: false,
+    f_name: "Ankit",
+    l_name: "Kumar",
+    age: 22,
+};
+function sum(a, b) {
+    return a + b; //`${a}+${b}`;--->wrong
+}
