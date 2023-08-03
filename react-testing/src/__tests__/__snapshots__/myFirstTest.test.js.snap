@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Button Component Link renders correctly 1`] = `
+<button
+  className="large blue"
+  data-testid="test-button"
+>
+  Click
+</button>
+`;

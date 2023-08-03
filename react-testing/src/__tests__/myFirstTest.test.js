@@ -2,6 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { Button } from "../components/Button";
 import App from "../App";
 import { Counter } from "../components/Counter";
+import renderer from "react-test-renderer";
 
 describe("Testing Button Component", () => {
   // Check button is present on dom or not
@@ -36,6 +37,26 @@ describe("Testing Button Component", () => {
       </Button>
     );
     expect(console.error).toBeCalledTimes(2);
+  });
+
+  // Snapshot testing
+
+  //   test("Link renders correctly", () => {
+  //     const tree = renderer
+  //       .create(<Link page="http://www.facebook.com">Facebook</Link>)
+  //       .toJSON();
+  //     expect(tree).toMatchSnapshot();
+  //   });
+
+  it("Link renders correctly", () => {
+    const tree = renderer
+      .create(
+        <Button color="blue" size="large">
+          Click
+        </Button>
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
 
