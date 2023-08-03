@@ -1,3 +1,28 @@
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.gray {
+  background-color: gray;
+}
+
+.large {
+  height: 60px;
+  width: 400px;
+}
+
+.medium {
+  height: 40px;
+  width: 300px;
+}
+
+.small {
+  height: 25px;
+  width: 200px;
+}
+
 .App {
   text-align: center;
 }

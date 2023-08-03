@@ -1,10 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { Button } from "./components/Button";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <h1>React testing</h1>
+      <Button size="medium" color="blue">
+        Click Me
+      </Button>
     </div>
   );
 }
