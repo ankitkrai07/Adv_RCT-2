@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export const Button = ({ children, size, color }) => {
-  return <button className={`${size} ${color}`}>{children}</button>;
+  return (
+    <button data-testid="test-button" className={`${size} ${color}`}>
+      {children}
+    </button>
+  );
 };
 
 Button.propTypes = {
