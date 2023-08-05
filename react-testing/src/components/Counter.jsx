@@ -8,15 +8,15 @@ export const Counter = () => {
     setCount((prev) => prev + 1);
   };
 
-  //   const handleReduce = () => {
-  //     setCount((prev) => prev - 1);
-  //   };
+  const handleReduce = () => {
+    setCount((prev) => prev - 1);
+  };
 
   return (
     <div>
       <h1 data-testid="counter">Counter:{count}</h1>
-      {/* <button onClick={handleAdd}>ADD</button>
-      <button onClick={handleReduce}>Reduce</button> */}
+      {/* <button onClick={handleAdd}>ADD</button> */}
+      <button onClick={handleReduce}>Reduce</button>
       <Button func={handleAdd} color="gray" size="small">
         Add
       </Button>
