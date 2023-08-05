@@ -9,7 +9,7 @@ export const Button = ({ children, size, color }) => {
   );
 };
 
-// Button.propTypes = {
-//   color: PropTypes.string.isRequired,
-//   size: PropTypes.string.isRequired,
-// };
+Button.propTypes = {
+  color: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+};
